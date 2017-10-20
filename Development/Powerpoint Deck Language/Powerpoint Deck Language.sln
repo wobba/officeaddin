@@ -1,20 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckLanguageAddIn", "DeckLanguageAddIn\DeckLanguageAddIn.csproj", "{85458C85-350B-4A4C-B9F0-B07ADFE89EFB}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DeckLanguageSetup", "DeckLanguageSetup\DeckLanguageSetup.vdproj", "{7898E4D3-E0B8-44E8-BDBA-88C1BDE2513C}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs03
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DeckLanguageAddIn\\DeckLanguageAddIn.csproj
-		SccProjectName1 = DeckLanguageAddIn
-		SccLocalPath1 = DeckLanguageAddIn
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -24,8 +17,15 @@ Global
 		{85458C85-350B-4A4C-B9F0-B07ADFE89EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85458C85-350B-4A4C-B9F0-B07ADFE89EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85458C85-350B-4A4C-B9F0-B07ADFE89EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7898E4D3-E0B8-44E8-BDBA-88C1BDE2513C}.Debug|Any CPU.ActiveCfg = Debug
+		{7898E4D3-E0B8-44E8-BDBA-88C1BDE2513C}.Debug|Any CPU.Build.0 = Debug
+		{7898E4D3-E0B8-44E8-BDBA-88C1BDE2513C}.Release|Any CPU.ActiveCfg = Release
+		{7898E4D3-E0B8-44E8-BDBA-88C1BDE2513C}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E8E83B5-F7F6-489E-B5F8-75C40A6627F9}
 	EndGlobalSection
 EndGlobal
