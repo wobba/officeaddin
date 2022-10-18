@@ -129,6 +129,25 @@ namespace PowerPointAddIn1
                 {
                     slideShapes[j].TextFrame.TextRange.LanguageID = (MsoLanguageID)dropDownLanguage.SelectedItem.Tag;
                 }
+
+                if (slideShapes[j].HasTable == MsoTriState.msoTrue)
+                {
+                    for (int row = 1; row <= slideShapes[j].Table.Rows.Count; row++)
+                    {
+                        CellRange cells = slideShapes[j].Table.Rows[row].Cells;
+                        for (int cell = 1; cell <= slideShapes[j].Table.Rows[row].Cells.Count; cell++)
+                        {
+                            var thisCell = cells[cell];
+
+                            if (thisCell.Shape.HasTextFrame == MsoTriState.msoTrue)
+                            {
+                                thisCell.Shape.TextFrame.TextRange.LanguageID = (MsoLanguageID)dropDownLanguage.SelectedItem.Tag;
+                            }
+                        }
+
+                    }
+                }
+
             }
         }
 
